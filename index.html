@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+        integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="Style.css">
+    <link rel="icon" href="logo.png">
+    <title>Spotify - Web Player: Music for everyone</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="nav d-flex align-items-center w-100 px-3 position-relative">
+
+                <div class="logo d-flex justify-content-center align-items-center">
+                    <a href="https://open.spotify.com/" aria-label="Spotify">
+                        <i class="ri-spotify-fill"></i>
+                    </a>
+                </div>
+
+                <div class="sh d-flex align-items-center gap-3">
+
+                    <div class="home d-flex justify-content-center align-items-center">
+                        <i class="ri-home-4-line"></i>
+                    </div>
+
+                    <div class="search d-flex align-items-center px-3">
+
+                        <i class="ri-search-line"></i>
+
+                        <label for="search" class="visually-hidden">Search</label>
+
+                        <input id="search" class="flex-grow-1 mx-3" type="text" placeholder="What do you want to play?">
+
+                        <i class="ri-layout-grid-fill"></i>
+
+                    </div>
+
+                </div>
+
+                <div class="right-nav d-flex align-items-center gap-3 ms-auto">
+
+                    <div class="premium">Premium</div>
+
+                    <div class="support">Support</div>
+
+                    <div class="download">Download</div>
+
+                    <div class="divider"></div>
+
+                    <div class="install d-flex align-items-center gap-2">
+                        <i class="ri-download-2-line"></i>
+                        <span>Install App</span>
+                    </div>
+
+                    <button class="btn btn-sm btn-dark border-0" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#queuePanel" aria-label="Toggle queue">
+
+                        <i class="ri-arrow-right-box-fill"></i>
+
+                    </button>
+
+                    <div class="notification d-flex justify-content-center align-items-center">
+                        <i class="ri-notification-3-line"></i>
+                    </div>
+
+                    <div class="friends d-flex justify-content-center align-items-center">
+                        <i class="ri-team-line"></i>
+                    </div>
+
+                    <div class="profile d-flex justify-content-center align-items-center">
+                        AA
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="content d-flex gap-2 p-2">
+
+            <div class="lib-card">
+
+                <div class="library d-flex justify-content-between align-items-center px-3">
+
+                    <div class="library-left d-flex align-items-center gap-3">
+                        <i class="ri-stack-fill"></i>
+                        <span>Your Library</span>
+                    </div>
+
+                    <div class="library-right d-flex align-items-center gap-2">
+
+                        <div class="icon-btn">
+                            <i class="ri-add-line"></i>
+                        </div>
+
+                        <div class="icon-btn">
+                            <i class="ri-arrow-right-s-line"></i>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="playlist p-2">
+
+                    <div class="playlist-card">
+                        <h4>Create your first playlist</h4>
+                        <p>It's easy, we'll help you.</p>
+                        <button>Create playlist</button>
+                    </div>
+
+                    <div class="playlist-card mt-3">
+                        <h4>Let's find some podcasts to follow</h4>
+                        <p>We'll keep you updated on new episodes.</p>
+                        <button>Browse podcasts</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="main-board flex-grow-1">
+
+                <section class="section">
+
+                    <div class="section-header">
+                        <h2>Made For You</h2>
+                        <span>Show all</span>
+                    </div>
+
+                    <div class="card-row">
+
+                        <div class="spotify-card">
+                            <div class="card-img">
+                                <img src="card1img.jpeg" alt="Daily Mix">
+                                <button class="play-card">
+                                    <i class="ri-play-fill"></i>
+                                </button>
+                            </div>
+
+                            <h5>Daily Mix 1</h5>
+
+                            <p>Arijit Singh, KK, Atif Aslam and more</p>
+                        </div>
+
+                        <div class="spotify-card">
+                            <div class="card-img">
+                                <img src="card2img.jpeg" alt="Top Hits">
+                                <button class="play-card">
+                                    <i class="ri-play-fill"></i>
+                                </button>
+                            </div>
+
+                            <h5>Top Hits</h5>
+
+                            <p>The biggest songs right now.</p>
+                        </div>
+
+                        <div class="spotify-card">
+                            <div class="card-img">
+                                <img src="card3img.jpeg" alt="Rock Classics">
+                                <button class="play-card">
+                                    <i class="ri-play-fill"></i>
+                                </button>
+                            </div>
+
+                            <h5>Rock Classics</h5>
+
+                            <p>Classic rock legends.</p>
+                        </div>
+
+                    </div>
+
+                </section>
+
+            </div>
+
+            <div class="collapse collapse-horizontal show" id="queuePanel">
+
+                <div class="queue">
+
+                    <div class="queue-header">
+                        
+                        <span class="open-queue">Title  </span>
+                    </div>
+
+                    <div class="now-playing">
+
+                        <h3 class="section-title">Now Playing</h3>
+
+                        <div class="queue-item">
+
+                            <img src="card3img.jpeg" alt="Album cover">
+
+                            <div class="queue-item-info">
+                                <span class="song-name">Song Name</span>
+                                <span class="artist-name">Artist</span>
+                            </div>
+
+                            <div class="queue-item-actions">
+                                <i class="ri-heart-line"></i>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="next-up">
+
+                        <h3 class="section-title">Next in Queue</h3>
+
+                        <div class="queue-item">
+
+                            <img src="card2img.jpeg" alt="Album cover">
+
+                            <div class="queue-item-info">
+                                <span class="song-name">Song Name</span>
+                                <span class="artist-name">Artist</span>
+                            </div>
+
+                            <div class="queue-item-actions">
+                                <i class="ri-heart-line"></i>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="next-from">
+                        <h3 class="section-title">Next from: Playlist Name</h3>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="music-player d-flex align-items-center justify-content-between px-3">
+
+            <div class="player-left d-flex align-items-center gap-3">
+
+                <img class="player-thumb" src="card5img.jpeg" alt="Album cover">
+
+                <div class="player-info">
+                    <div class="player-song">Song Name</div>
+                    <div class="player-artist">Artist Name</div>
+                </div>
+
+                <button class="player-icon">
+                    <i class="ri-heart-line"></i>
+                </button>
+
+                <button class="player-icon">
+                    <i class="ri-picture-in-picture-line"></i>
+                </button>
+
+            </div>
+
+
+            <div class="player-center">
+
+                <div class="player-controls d-flex justify-content-center align-items-center gap-4">
+
+                    <button class="player-icon">
+                        <i class="ri-shuffle-line"></i>
+                    </button>
+
+                    <button class="player-icon">
+                        <i class="ri-skip-back-fill"></i>
+                    </button>
+
+                    <button class="play-btn">
+                        <i class="ri-play-fill"></i>
+                    </button>
+
+                    <button class="player-icon">
+                        <i class="ri-skip-forward-fill"></i>
+                    </button>
+
+                    <button class="player-icon">
+                        <i class="ri-repeat-line"></i>
+                    </button>
+
+                </div>
+
+                <div class="progress-row d-flex align-items-center gap-2">
+
+                    <span class="time">0:00</span>
+
+                    <div class="progress-track">
+                        <div class="progress-fill"></div>
+                    </div>
+
+                    <span class="time">3:45</span>
+
+                </div>
+
+            </div>
+
+
+            <div class="player-right d-flex align-items-center gap-3">
+
+                <button class="player-icon">
+                    <i class="ri-mic-line"></i>
+                </button>
+
+                <button class="player-icon">
+                    <i class="ri-play-list-line"></i>
+                </button>
+
+                <button class="player-icon">
+                    <i class="ri-speaker-line"></i>
+                </button>
+
+                <button class="player-icon">
+                    <i class="ri-volume-up-line"></i>
+                </button>
+
+                <div class="volume-track">
+                    <div class="volume-fill"></div>
+                </div>
+
+                <button class="player-icon">
+                    <i class="ri-fullscreen-line"></i>
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
